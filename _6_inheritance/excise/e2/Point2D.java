@@ -32,11 +32,9 @@ public class Point2D {
         this.x = x;
         this.y = y;
     }
-
-    float[] arr = new float [2];
-
-    public float getXY() {
-        return arr[2];
+    public float[] getXY() {
+        float res [] = new float[] {x,y};
+        return res;
     }
 
     @Override

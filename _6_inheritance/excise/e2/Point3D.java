@@ -17,12 +17,13 @@ public class Point3D extends Point2D {
         this.z = z;
     }
     public void  setXYZ (float x, float y, float z){
-        this.x =x;
-        this.y = y;
+        getX();
+        getY();
         this.z = z;
     }
-    public float getXYZ() {
-        return arr [3];
+    public float[] getXYZ() {
+        float [] array = new float[] {getX(),getY(),z};
+        return array;
     }
 
     @Override
